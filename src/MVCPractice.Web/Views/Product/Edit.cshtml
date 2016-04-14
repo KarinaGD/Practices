@@ -1,0 +1,31 @@
+﻿@model MVCPractice.Data.Databases.Product
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit @Model.Name</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Descriptions)
+        @Html.TextBoxFor(m => m.Descriptions)
+        @Html.ValidationMessageFor(m => m.Descriptions)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Price)
+        @Html.EditorFor(m => m.Price)
+        @Html.ValidationMessageFor(m => m.Price)
+
+    </div>
+
+    <input type="submit" value="Edit @Model.Name" />
+}

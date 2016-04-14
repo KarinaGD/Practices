@@ -1,0 +1,11 @@
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\MVCPractice.Core.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\MVCPractice.Core.pdb
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\MVCPractice.Data.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\Ninject.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\EntityFramework.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\MVCPractice.Data.pdb
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\Ninject.xml
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\bin\Debug\EntityFramework.xml
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\obj\Debug\MVCPractice.Core.csprojResolveAssemblyReference.cache
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\obj\Debug\MVCPractice.Core.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Core\obj\Debug\MVCPractice.Core.pdb

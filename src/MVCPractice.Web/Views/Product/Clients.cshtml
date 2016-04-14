@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MVCPractice.Data.Databases.Client>
+@{
+    ViewBag.Title = "Clients";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    WebGrid grid = new WebGrid(Model);
+<h2>Clients</h2>
+
+@grid.GetHtml(columns: new[] {
+    grid.Column("Name"),
+    grid.Column("SurName"),
+    grid.Column("Email"),
+    grid.Column("Birthday","Birthday", format: (item) => string.Format("{0:dd-MM-yyyy}", item.Birthday)),
+    grid.Column("Gender", format: @<text>@(item.Gender ? "Female" : "Male")</text>)
+})

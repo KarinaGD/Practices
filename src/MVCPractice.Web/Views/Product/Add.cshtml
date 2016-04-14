@@ -1,0 +1,32 @@
+﻿@model MVCPractice.Data.Databases.Product
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add New Product</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Descriptions)
+        @Html.TextBoxFor(m => m.Descriptions)
+        @Html.ValidationMessageFor(m => m.Descriptions)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Price)
+        @Html.TextBoxFor(m => m.Price)
+        @Html.ValidationMessageFor(m => m.Price)
+
+    </div>
+
+    <input type="submit" value="Add" />
+}
+

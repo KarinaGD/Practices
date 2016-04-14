@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MVCPractice.Data.Databases.Sale>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    WebGrid grid = new WebGrid(Model);
+}
+
+<h2>Index</h2>
+@Html.ActionLink("New Sale", "Add", "Sale")
+
+@grid.GetHtml(columns: new[] {
+    grid.Column(header:"Date", format: (item) => string.Format("{0:dd-MM-yyyy}", item.CreatedAt)),
+    grid.Column(header:"Product",format:(item)=> item.Product.Name),
+    grid.Column(header:"Client",format:(item)=> item.Client.Email),
+    grid.Column(header:"Price",format:(item)=> item.Product.Price),
+    grid.Column(header:"",format:(item)=>Html.ActionLink("Delete", "Delete", "Sale", new {id = item.Id},new { onclick = "return confirm('Are you sure to wish to delete this product')"})),
+})
+
+

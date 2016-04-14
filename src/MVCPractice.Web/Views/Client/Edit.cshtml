@@ -1,0 +1,43 @@
+﻿@model MVCPractice.Data.Databases.Client
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit @Model.Name</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.SurName)
+        @Html.TextBoxFor(m => m.SurName)
+        @Html.ValidationMessageFor(m => m.SurName)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Birthday)
+        @Html.TextBoxFor(m => m.Birthday)
+        @Html.ValidationMessageFor(m => m.Birthday)
+    </div>
+    <div>
+        @Html.RadioButtonFor(m => m.Gender, true, new { id = "Gender-true" })
+        @Html.Label("Gender-true", "Female")
+
+        @Html.RadioButtonFor(m => m.Gender, false, new { id = "Gender-false" })
+        @Html.Label("Gender-false", "Male")
+    </div>
+
+    <input type="submit" value="Edit @Model.Name" />
+
+}

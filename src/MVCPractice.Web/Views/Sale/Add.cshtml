@@ -1,0 +1,16 @@
+﻿@model MVCPractice.Data.Databases.Sale
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Sale</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.DropDownListFor(m => m.ProductId, new SelectList(ViewBag.ProductList, "Id", "Name"), "-select a Sale-")
+        @Html.DropDownListFor(m => m.ClientId, new SelectList(ViewBag.ClientList, "Id", "Name"), "-select a Sale-")
+    </div>
+
+    <input type="submit" value="Add"/>
+}

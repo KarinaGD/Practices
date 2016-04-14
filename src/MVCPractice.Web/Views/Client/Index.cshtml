@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MVCPractice.Data.Databases.Client>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    WebGrid grid = new WebGrid(Model);
+}
+
+
+<h2>Clients</h2>
+
+@Html.ActionLink("New Client", "Add", "Client")
+@grid.GetHtml(columns: new[] {
+    grid.Column("Name"),
+    grid.Column("SurName"),
+    grid.Column("Email"),
+    grid.Column("Birthday","Birthday", format: (item) => string.Format("{0:dd-MM-yyyy}", item.Birthday)),
+    grid.Column("Gender", format: @<text>@(item.Gender ? "Female" : "Male")</text>),
+    grid.Column("CreatedAt", "Create At", format: (item) => string.Format("{0:dd-MM-yyyy}", item.CreatedAt)),
+    grid.Column("UpdateAt", "Update At", format: (item) => string.Format("{0:dd-MM-yyyy}", item.UpdateAt)),
+    grid.Column(header:"",format:(item)=>Html.ActionLink("Edit", "Edit", "Client", new {id = item.Id}, null)),
+    grid.Column(header:"",format:(item)=>Html.ActionLink("Delete", "Delete", "Client", new {id = item.Id},new { onclick = "return confirm('Are you sure to wish to delete this client')"})),
+    grid.Column(header:"",format:(item)=>Html.ActionLink("Products", "Products", "Client", new {id = item.Id}, null)),
+})

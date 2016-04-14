@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MVCPractice.Data.Databases.Product>
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    WebGrid grid = new WebGrid(Model);
+}
+
+<h2>Products</h2>
+
+@grid.GetHtml(columns: new[] {
+    grid.Column("Name"),
+    grid.Column("Descriptions")
+})

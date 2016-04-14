@@ -1,0 +1,10 @@
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\MVCPractice.Data.dll.config
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\MVCPractice.Data.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\MVCPractice.Data.pdb
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\EntityFramework.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\EntityFramework.SqlServer.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\EntityFramework.xml
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\bin\Debug\EntityFramework.SqlServer.xml
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\obj\Debug\MVCPractice.Data.dll
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\obj\Debug\MVCPractice.Data.pdb
+B:\Tutorial\Projects\MVCPractice\MVCPractice\MVCPractice.Data\obj\Debug\MVCPractice.Data.csprojResolveAssemblyReference.cache
